@@ -1,0 +1,4 @@
+baseURL = 'https://www.terou.net/'
+languageCode = 'en-us'
+title = 'b-pelmoine'
+theme = 'ananke'
