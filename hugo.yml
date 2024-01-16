@@ -1,6 +1,6 @@
 baseURL: "https://dev.b-pelmoine.com"
 languageCode: en-us
-title: b-pelmoine
+title: Benjamin Pelmoine
 theme: PaperMod
 
 minify:
@@ -8,14 +8,18 @@ minify:
   minifyOutput: true
   
 params:
-  title: b-pelmoine
+  disableThemeToggle: true
+  defaultTheme: dark
+  assets:
+    disableHLJS: true
+  title: Benjamin Pelmoine
   description: "Benjamin Pelmoine dev articles"
   keywords: [Blog, Dev, b-pelmoine, bpelmoine]
   author: Benjamin Pelmoine
   ShareButtons: ["reddit", "linkedin", "x"]
   ShowBreadCrumbs: true
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLink: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
@@ -47,8 +51,6 @@ params:
         url: "https://github.com/b-pelmoine"
       - name: Portfolio
         url: "https://www.b-pelmoine.com"
-  assets:
-    disableHLJS: true
 
 menu:
   main:
@@ -69,18 +71,13 @@ menu:
       url: https://www.b-pelmoine.com
       weight: 40
 
-pygmentsUseClasses: true
 markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
   highlight:
     noClasses: false
-    # anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    # lineNos: true
-    style: "github-dark"
-    # hl_Lines: ""
-    # hl_inline: false
-    # lineAnchors: ""
-    # lineNoStart: 1
-    # lineNumbersInTable: true
-    # noHl: false

@@ -6,10 +6,6 @@ categories: ['dev']
 cover:
     image: 'img/b-pelmoine.svg' # generated using https://og-playground.vercel.app/
     alt: 'b-pelmoine'
-
-markup:
-  highlight:
-    style: "github-dark"
 ---
 
 ## hello world
@@ -17,7 +13,7 @@ markup:
 This is a test.
 This is a [link](https://www.b-pelmoine.com) to my website
 
-```{linenos=true,hl_lines=[4]}
+``` cpp {linenos=true, hl_lines=[4], linenostart=5}
 #include <print> 
 
 int main() {
